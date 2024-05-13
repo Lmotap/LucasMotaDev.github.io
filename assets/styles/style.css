@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Abril Fatface';
+    font-weight: 400;
+    src: url('../fonts/AbrilFatFace/AbrilFatface-Regular.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'Anonymous Pro';
+    font-weight: 400;
+    src: url('../fonts/AnonymousPro/AnonymousPro-Regular.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'Anonymous Pro';
+    font-style: italic;
+    src: url('../fonts/AnonymousPro/AnonymousPro-Italic.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'Anonymous Pro';
+    font-weight: 700;
+    src: url('../fonts/AnonymousPro/AnonymousPro-Bold.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'Anonymous Pro';
+    font-weight: 700;
+    font-style: italic;
+    src: url('../fonts/AnonymousPro/AnonymousPro-BoldItalic.ttf') format('truetype')
+}
+
+.root {
+
+    /* Couleurs variables */
+
+    --color-white: #F2F2F2;
+    --color-blue: #254559;
+    --color-green: #537345;
+
+    /* Font variables */
+
+    --fnt-abril: "Abril Fatface";
+    --fnt-anonymous: "Anonymous Pro";
+}
