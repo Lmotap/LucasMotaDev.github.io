@@ -54,6 +54,7 @@ nav li {
     justify-content: center;
     align-items: center;
     margin-top: 15rem;
+    gap: 3rem;
 }
 
 .paragraph, .paragraph-about-me {
@@ -80,6 +81,12 @@ nav li {
     justify-content: center;
     align-items: center;
     margin-top: 15rem;
+    gap: 3rem;
+}
+
+.paragraph-about-me {
+    padding: 0 15%;
+    margin: 5% 0;
 }
 
 
@@ -91,17 +98,17 @@ nav li {
     justify-content: center;
     align-items: center;
     margin-top: 15rem;
-    gap: 2rem;
+    gap: 3rem;
 }
 
-.container-project {
+.title-date-project {
+    display: block;
+}
+.wrapper-title-project-image {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.wrapper-title-project-date {
+    align-items: center; 
+    text-align: center; 
     margin: 2rem 0;
 }
 
@@ -113,8 +120,9 @@ h3 {
 .paragraph-project {
     padding: 0 15%;
     margin: 5% 0;
-    text-align: left;
 }
+
+
 /* Footer */
 
 footer {
@@ -186,23 +194,14 @@ footer {
 .overview-project {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 5rem;
-}
-
-.container-preview-project {
-    display: flex;
-    justify-content: flex-start;
-    align-self: flex-start;
-    padding-left: 6%;
-    margin-bottom: 3rem;
+    gap: 2rem;
+    padding: 10%;
 }
 
 .paragraph-description-project  {
     white-space: pre-line;
-    text-align: justify;
-    padding: 0 5rem;
 }
 
 /* Link du projet */ 
@@ -268,19 +267,6 @@ footer {
 
 .container-specificity {
     gap: 10rem;
-}
-
-/* Description du projet */
-
-.overview-project {
-    margin-top: 10rem;
-}
-
-.container-preview-project {
-    display: flex;
-    align-self: flex-start;
-    padding-left: 9%;
-    margin-bottom: 3rem;
 }
 
 
@@ -360,13 +346,6 @@ footer {
 
 .overview-project {
     margin-top: 10rem;
-}
-
-.container-preview-project {
-    display: flex;
-    align-self: flex-start;
-    padding-left: 6%;
-    margin-bottom: 3rem;
 }
 
 

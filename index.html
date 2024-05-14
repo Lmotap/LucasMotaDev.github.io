@@ -32,8 +32,8 @@
                         <div class="collapse hide">
                             
                         <div class="container-nav">
-                            <li class="link_nav"><a href="#projects">Projets</a></li>
-                            <li class="link_nav"><a href="./doc/CV_ORIGINAL.pdf" download>CV</a></li>
+                            <li class="link_nav"><a class="custom-link" href="#projects">Projets</a></li>
+                            <li class="link_nav"><a class="custom-link" href="./doc/CV_ORIGINAL.pdf" download>CV</a></li>
                         </div>
             </nav>
         
@@ -42,11 +42,9 @@
                                     <a href="https://github.com/Lmotap"><img class="icon-rs" src="./assets/icons/github.svg" alt="Icône de GitHub"></a>
                                     <a href="mailto:mota.lucas@proton.me"><img class="icon-rs" src="./assets/icons/message.svg" alt="Icône de messagerie"></a>
                                 </div>
-                
                         </div>
                     </div>
                 </ul>
-            
         </header>
 
     <main>
@@ -62,7 +60,9 @@
 
             <div class="container-localisation">
                 <p class="paragraph-localisation">Situé à Paris</p>
-                <img class="icon-paris" src="./assets/icons/eiffel-tower.svg" alt="">
+                <div class="icon-paris">
+                    <img src="./assets/icons/eiffel-tower.svg" alt="">
+                </div>
             </div>
         </section>
 
@@ -75,16 +75,10 @@
         <section class="projects" id="projects">
             <h2 class="title">Mes projets</h2>
 
-            <div class="container-project">
-
-                <div class="wrapper-title-project-image">
-                    <a href="./sparkle.html"><img class="img-projects" src="./assets/img/portfoliophoto.jpg" alt=""></a>
-                    <h3>Sparkle <span class="date">- 2024</span></h3>
-                </div>
-
-                <div class="container-paragraph-project">
-                    <p class="paragraph-project">Conception de mon blog et site vitrine autour de mes photographies.</p>
-                </div>
+            <div class="wrapper-title-project-image">
+                <a href="./sparkle.html"><img class="img-projects" src="./assets/img/portfoliophoto.jpg" alt=""></a>
+                <h3 class="title-date-project">Sparkle <span class="date">- 2024</span></h3>
+                <p class="paragraph-project">Conception de mon blog et site vitrine autour de mes photographies.</p>
             </div>
 
         </section>

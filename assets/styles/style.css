@@ -57,6 +57,19 @@ html {
 
 .icon-rs {
     width: 2rem;
+    transition: transform .3s ease-in-out;
+}
+
+.icon-rs:hover {
+    animation: shake .5s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0px) rotate(0deg); }
+    25% { transform: translateX(-5px) rotate(-5deg); }
+    50% { transform: translateX(0px) rotate(0deg); }
+    75% { transform: translateX(5px) rotate(5deg); }
+    100% { transform: translateX(0px) rotate(0deg); }
 }
 
 a {
@@ -68,6 +81,32 @@ a {
     font-family: var(--fnt-abril);
     font-size: 2em;
     color: var(--color-blue);
+}
+
+.custom-link {
+    text-decoration: none;
+    color: var(--color-blue);
+    font-weight: 700;
+    position: relative;
+}
+
+.custom-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--color-green);
+    bottom: -4px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.custom-link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 /* Section Introduction */ 
@@ -89,8 +128,44 @@ a {
 }
 
 .icon-paris {
+    position: relative;
     width: 2rem;
 }
+
+.icon-paris:hover::before,
+.icon-paris:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px; /* Augmentation de la taille */
+    height: 4px; /* Augmentation de la taille */
+    background: var(--color-green); /* Changement de la couleur */
+    border-radius: 50%;
+    animation: firework 1s ease-out forwards;
+}
+
+.icon-paris:hover::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.icon-paris:hover::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@keyframes firework {
+    0% {
+        width: 4px; /* Augmentation de la taille */
+        height: 4px; /* Augmentation de la taille */
+        opacity: 1;
+    }
+    100% {
+        width: 100px; /* Augmentation de la taille */
+        height: 100px; /* Augmentation de la taille */
+        opacity: 0;
+    }
+}
+
 
 
 /* Section About me */
@@ -209,13 +284,32 @@ h3 {
 /* Fiche Project */
 
 .icon-project {
+    animation: slide-up 1s ease-out forwards;
+    opacity: 0;
+    position: relative;
+    top: 50px;
     width: 4rem;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        top: 50px;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
 }
 
 .title-project {
     font-family: var(--fnt-abril);
     font-size: 3em;
     color: var(--color-blue);
+    animation: slide-up 1s ease-out forwards;
+    opacity: 0;
+    position: relative;
+    top: 50px;
 }
 
 .paragraph-project-overview {
@@ -312,8 +406,6 @@ h3 {
 }
 
 .paragraph-project {
-    padding: 0 15%;
-    margin: 5% 0;
     font-size: 2em;
 }
 
@@ -413,8 +505,6 @@ h3 {
 }
 
 .paragraph-project {
-    padding: 0 15%;
-    margin: 5% 0;
     text-align: left;
     font-size: 2em;
 }
