@@ -46,6 +46,7 @@ nav li {
     top: 0.8rem;
 }
 
+
 /* Section Introduction */ 
 
 .intro {
@@ -300,12 +301,18 @@ footer {
         align-items: center;
         padding: 1em 2rem;
     }
-
+    
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    }
+    
     .container-nav {
         display: flex;
         justify-content: center;
         align-items: center;
-
         gap: 5rem;
     }
 
