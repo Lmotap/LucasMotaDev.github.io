@@ -63,3 +63,28 @@ function manageCollapsableMenuItem(event) {
     
     }
 }
+
+// Récupération des éléments
+const navMenu = document.querySelector('.collapse');
+const containerIcon = document.querySelector('.container-icon');
+
+// Ajout d'un écouteur d'événement pour le redimensionnement de la fenêtre
+window.addEventListener('resize', manageIconContainer);
+
+// Fonction pour gérer le placement du container-icon
+function manageIconContainer() {
+    if (window.innerWidth <= 833) { // Taille d'écran pour le responsive
+        if (!navMenu.contains(containerIcon)) {
+            navMenu.appendChild(containerIcon);
+        }
+    } else {
+        if (navMenu.contains(containerIcon)) {
+            navMenu.removeChild(containerIcon);
+            // Ajoutez le container-icon à l'endroit où vous voulez qu'il apparaisse sur le bureau
+            document.querySelector('header').appendChild(containerIcon);
+        }
+    }
+}
+
+// Appel initial de la fonction pour gérer le placement initial du container-icon
+manageIconContainer();

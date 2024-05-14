@@ -53,7 +53,7 @@ nav li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 15rem;
 }
 
 .paragraph, .paragraph-about-me {
@@ -64,8 +64,12 @@ nav li {
 .container-localisation {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     gap: 1rem;
+}
+
+.paragraph-localisation {
+    align-self: flex-end;
 }
 
 /* Section About me */
@@ -75,7 +79,7 @@ nav li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 15rem;
 }
 
 
@@ -86,7 +90,7 @@ nav li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 15rem;
     gap: 2rem;
 }
 
@@ -98,11 +102,24 @@ nav li {
 }
 
 .wrapper-title-project-date {
-    width: 80%;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
+h3 {
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+.paragraph-project {
+    padding: 0 15%;
+    margin: 5% 0;
+    text-align: left;
+}
 /* Footer */
+
+footer {
+    margin-top: 15rem;
+}
 
 .container-copyright {
     display: flex;
@@ -141,6 +158,7 @@ nav li {
 
 .paragraph-project-overview {
     text-align: center;
+    padding: 0 10%;
 }
 
 /* Spécificité du projet */
@@ -176,16 +194,15 @@ nav li {
 .container-preview-project {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
-    padding-right: 18rem;
-    padding-left: 1rem;
+    align-self: flex-start;
+    padding-left: 6%;
+    margin-bottom: 3rem;
 }
 
 .paragraph-description-project  {
     white-space: pre-line;
     text-align: justify;
-    padding-left: 5rem;
-    padding-right: 1rem;
+    padding: 0 5rem;
 }
 
 /* Link du projet */ 
@@ -201,4 +218,170 @@ nav li {
 
 .text-link-project {
     text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 834px) {
+
+    /* Header */
+
+    #show_hamburger, #close_hamburger {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 2rem;
+    }
+
+    .container-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .container-icon {
+        align-items: center;
+    }
+
+    .link_nav {
+        padding: 0;
+    }
+
+    .collapse {
+        display: flex;
+    }
+
+    /* Sparkle HTML */
+
+/* Fiche Project */
+
+.icon-project {
+    margin-top: 10rem;
+}
+
+/* Spécificité du projet */
+
+.container-specificity {
+    gap: 10rem;
+}
+
+/* Description du projet */
+
+.overview-project {
+    margin-top: 10rem;
+}
+
+.container-preview-project {
+    display: flex;
+    align-self: flex-start;
+    padding-left: 9%;
+    margin-bottom: 3rem;
+}
+
+
+/* Link du projet */ 
+
+.link-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    gap: 1rem;
+}
+
+.text-link-project {
+    text-align: center;
+}
+}
+
+@media screen and (min-width: 1224px) {
+
+    /* Header */
+
+    #show_hamburger, #close_hamburger {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 2rem;
+    }
+
+    .container-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 5rem;
+    }
+
+    .container-icon {
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .link_nav {
+        padding: 0;
+    }
+
+    .collapse {
+        display: flex;
+    }
+
+    
+
+    /* Sparkle HTML */
+
+/* Fiche Project */
+
+.icon-project {
+    margin-top: 10rem;
+}
+
+/* Spécificité du projet */
+
+.container-specificity {
+    gap: 20rem;
+}
+
+/* Description du projet */
+
+.overview-project {
+    margin-top: 10rem;
+}
+
+.container-preview-project {
+    display: flex;
+    align-self: flex-start;
+    padding-left: 6%;
+    margin-bottom: 3rem;
+}
+
+
+/* Link du projet */ 
+
+.link-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    gap: 1rem;
+}
+
+.text-link-project {
+    text-align: center;
+}
 }

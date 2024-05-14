@@ -16,35 +16,36 @@
     <body>
         
         <!-- Début du header -->
-    <header>
-        <a href="./index.html"><div class="logo">LM</div></a>
-        <nav>
-            <ul>
-                <li id="show_hamburger">
-                    <span id="nav-show" data-target=".collapse"><img class="icon-hamburger" id="icon_hamburger" src="./assets/icons/hamburger.svg" alt="Icône de burger"></span>
-                </li>
-                <div class="container_nav">
-                    <li id="close_hamburger">
-                    <span id="nav-hide" data-target=".collapse" class="hide"><img class="icon-hamburger" id="icon_cross_ham" src="./assets/icons/cross.svg" alt="Icône de fermeture"></span>
+        <header>
+                <a href="./index.html"><div class="logo">LM</div></a>
+            <nav>
+                <ul>
+                    <li id="show_hamburger">
+                        <span id="nav-show" data-target=".collapse"><img class="icon-hamburger" id="icon_hamburger" src="./assets/icons/hamburger.svg" alt="Icône de burger"></span>
                     </li>
-                    <div class="collapse hide">
-                        
-                        <div class="nav">
-                            <li class="link_nav underline"><a href="#projects">Projets</a></li>
+                    <div class="container_nav">
+                        <li id="close_hamburger">
+                        <span id="nav-hide" data-target=".collapse" class="hide"><img class="icon-hamburger" id="icon_cross_ham" src="./assets/icons/cross.svg" alt="Icône de fermeture"></span>
+                        </li>
+                        <div class="collapse hide">
+                            
+                        <div class="container-nav">
+                            <li class="link_nav"><a href="#projects">Projets</a></li>
                             <li class="link_nav"><a href="">CV</a></li>
-
-                        <div class="container-icon">
-                            <a href="#"><img class="icon-rs" src="./assets/icons/linkedin.svg" alt=""></a>
-                            <a href="#"><img class="icon-rs" src="./assets/icons/github.svg" alt=""></a>
-                            <a href="#"><img class="icon-rs" src="./assets/icons/message.svg" alt=""></a>
                         </div>
-
+            </nav>
+        
+                                <div class="container-icon">
+                                    <a href="#"><img class="icon-rs" src="./assets/icons/linkedin.svg" alt=""></a>
+                                    <a href="#"><img class="icon-rs" src="./assets/icons/github.svg" alt=""></a>
+                                    <a href="#"><img class="icon-rs" src="./assets/icons/message.svg" alt=""></a>
+                                </div>
+                
                         </div>
                     </div>
-                </div>
-            </ul>
-        </nav>
-    </header>
+                </ul>
+            
+        </header>
 
     <main>
         <section class="intro">
@@ -58,7 +59,7 @@
             </div>
 
             <div class="container-localisation">
-                <p class="paragraph">Situé à Paris</p>
+                <p class="paragraph-localisation">Situé à Paris</p>
                 <img class="icon-paris" src="./assets/icons/eiffel-tower.svg" alt="">
             </div>
         </section>
@@ -66,29 +67,26 @@
         <section class="about-me">
             <h2 class="title">A propos de moi</h2>
 
-            <p class="paragraph-about-me">Lucas est un développeur junior passionné, compétent en front-end, back-end, maquettage et design. Il est animé par la créativité, les hommes chapeaux, et le désir d’apprendre. </p>
+            <p class="paragraph-about-me">Je suis un développeur junior passionné, compétent en front-end, back-end, maquettage et design. Il est animé par la créativité, les hommes chapeaux, et le désir d’apprendre. </p>
         </section>
 
         <section class="projects" id="projects">
             <h2 class="title">Mes projets</h2>
 
             <div class="container-project">
-                <a href="./sparkle.html"><img class="img-projects" src="./assets/img/portfoliophoto.jpg" alt=""></a>
-                <div class="wrapper-title-project-date">
-                    <h3>Sparkle <span class="date">- 2024</span></h3>
-                </div>
-                <p class="paragraph-project">Conception de mon blog et site vitrine autour de mes photographies.</p>
-            </div>
 
-            <div class="container-project">
-                <img class="img-projects" src="./assets/img/portfoliophoto.jpg" alt="">
-                <div class="wrapper-title-project-date">
+                <div class="wrapper-title-project-image">
+                    <a href="./sparkle.html"><img class="img-projects" src="./assets/img/portfoliophoto.jpg" alt=""></a>
                     <h3>Sparkle <span class="date">- 2024</span></h3>
                 </div>
-                <p class="paragraph-project">Conception de mon blog et site vitrine autour de mes photographies.</p>
+
+                <div class="container-paragraph-project">
+                    <p class="paragraph-project">Conception de mon blog et site vitrine autour de mes photographies.</p>
+                </div>
             </div>
 
         </section>
+
     </main>
     
         <footer>

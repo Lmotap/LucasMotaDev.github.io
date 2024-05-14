@@ -49,7 +49,6 @@ html {
     font-family: var(--fnt-abril);
     font-size: 2.5em;
     color: var(--color-blue);
-    display: inline-block;
 }
 
 .icon-hamburger {
@@ -71,11 +70,6 @@ a {
     color: var(--color-blue);
 }
 
-.underline {
-    text-decoration: underline;
-}
-
-
 /* Section Introduction */ 
 
 .container-intro h1 {
@@ -88,16 +82,16 @@ a {
     color: var(--color-green);
 }
 
-.paragraph, .paragraph-about-me, .paragraph-project {
+.paragraph, .paragraph-about-me, .paragraph-project, .paragraph-localisation {
     font-family: var(--fnt-anonymous);
-    font-size: 1em;
+    font-size: 1.5em;
     color: var(--color-green);
 }
 
 .icon-paris {
     width: 2rem;
-    align-self: center;
 }
+
 
 /* Section About me */
 
@@ -135,9 +129,6 @@ h3 {
 }
 
 .paragraph-project {
-    padding: 0 10%;
-    margin: 5% 0;
-    text-align: left;
     font-size: 1.5em;
 }
 
@@ -281,4 +272,210 @@ h3 {
 
 .icon-arrow {
     width: 1.5rem;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 834px) {
+
+    /* Section Introduction */
+
+    .container-intro h1 {
+        font-size: 3.5em;
+    }
+    
+    .paragraph, .paragraph-about-me, .paragraph-project, .paragraph-localisation {
+        font-size: 1.8em;
+    }
+
+    .icon-paris {
+        width: 3rem;
+    }
+
+    /* Section About me */
+
+.title {
+    font-size: 3em;
+}
+
+
+/* Section Projects */
+
+.img-projects {
+    width: 40rem;
+    height: 30rem;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+.paragraph-project {
+    padding: 0 15%;
+    margin: 5% 0;
+    font-size: 2em;
+}
+
+/* Footer */
+
+.icon-rs {
+    width: 2rem;
+
+}
+
+.copyright {
+    font-size: 2em;
+}
+
+.icon-copyright {
+    width: 2rem;
+}
+
+/* Sparkle HTML */
+
+.icon-project {
+    width: 5rem;
+}
+
+.title-project {
+    font-size: 4em;
+}
+
+.paragraph-project-overview {
+    font-size: 1.5em;
+    padding: 0 10%;
+}
+
+
+.sub-title, .sub-title-preview {
+    font-size: 2em;
+}
+
+.list-project {
+    font-size: 1.5em;
+}
+
+/* Spécificité du projet */
+
+.paragraph-description-project {
+    font-size: 1.5em;
+}
+
+.sub-title-preview {
+    font-size: 2em;
+}
+
+/* Link du projet */
+
+.text-link-project {
+    font-size: 1.5em;
+}
+
+.icon-arrow {
+    width: 2rem;
+}
+
+}
+
+@media screen and (min-width: 1224px) {
+
+    /* Section Introduction */
+
+    .container-intro h1 {
+        font-size: 3.5em;
+    }
+    
+    .paragraph, .paragraph-about-me, .paragraph-project, .paragraph-localisation {
+        font-size: 1.8em;
+    }
+
+    .icon-paris {
+        width: 3rem;
+    }
+
+    /* Section About me */
+
+.title {
+    font-size: 3em;
+}
+
+
+/* Section Projects */
+
+.img-projects {
+    width: 55rem;
+    height: 30rem;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+.paragraph-project {
+    padding: 0 15%;
+    margin: 5% 0;
+    text-align: left;
+    font-size: 2em;
+}
+
+/* Footer */
+
+.icon-rs {
+    width: 2rem;
+
+}
+
+.copyright {
+    font-size: 2em;
+}
+
+.icon-copyright {
+    width: 2rem;
+}
+
+/* Sparkle HTML */
+
+.icon-project {
+    width: 5rem;
+}
+
+.title-project {
+    font-size: 4em;
+}
+
+.paragraph-project-overview {
+    font-size: 1.5em;
+    padding: 0 10%;
+}
+
+
+.sub-title, .sub-title-preview {
+    font-size: 2em;
+}
+
+.list-project {
+    font-size: 1.5em;
+}
+
+/* Spécificité du projet */
+
+.paragraph-description-project {
+    font-size: 2em;
+}
+
+.sub-title-preview {
+    font-size: 2em;
+}
+
+/* Link du projet */
+
+.text-link-project {
+    font-size: 2em;
+}
+
+.icon-arrow {
+    width: 2rem;
+}
+
 }
