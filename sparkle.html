@@ -1,17 +1,117 @@
 <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sparkle - Portfolio et Blog de photographie</title>
-        
-        <link rel="stylesheet" href="./assets/styles/reset.css">
-        <link rel="stylesheet" href="./assets/styles/layout.css">
-        <link rel="stylesheet" href="./assets/styles/style.css">
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkle - Portfolio et Blog de photographie</title>
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/layout.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <!-- Début du header -->
+    <header>
+        <a href="./index.html">
+            <div class="logo">LM</div>
+        </a>
+        <nav>
+            <ul>
+                <li id="show_hamburger">
+                    <span id="nav-show" data-target=".collapse">
+                        <img class="icon-hamburger" id="icon_hamburger" src="./assets/icons/hamburger.svg" alt="Icône de burger">
+                    </span>
+                </li>
+                <div class="container_nav">
+                    <li id="close_hamburger">
+                        <span id="nav-hide" data-target=".collapse" class="hide">
+                            <img class="icon-hamburger" id="icon_cross_ham" src="./assets/icons/cross.svg" alt="Icône de fermeture">
+                        </span>
+                    </li>
+                    <div class="collapse hide">
+                        <div class="nav">
+                            <li class="link_nav"><a href="">CV</a></li>
+                            <div class="container-icon">
+                                <a href="#"><img class="icon-rs" src="./assets/icons/linkedin.svg" alt=""></a>
+                                <a href="#"><img class="icon-rs" src="./assets/icons/github.svg" alt=""></a>
+                                <a href="#"><img class="icon-rs" src="./assets/icons/message.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="sparkle-project">
+            <img class="icon-project" src="./assets/icons/camera.svg" alt="">
+            <h1 class="title-project">Sparkle</h1>
+            <p class="paragraph-project-overview">Regroupement d’une grande partie de mes photographies et articles mise en lumière gràce à un site web.</p>
+            <div class="separator"><!-- Separator --></div>
+            <div class="container-specificity">
+                <div class="container-skills">
+                    <h2 class="sub-title">Compétences</h2>
+                    <ul>
+                        <li class="list-project">Prototypage</li>
+                        <li class="list-project">Design visuels</li>
+                    </ul>
+                </div>
+                <div class="container-langages">
+                    <h2 class="sub-title">Langages</h2>
+                    <ul>
+                        <li class="list-project">HTML</li>
+                        <li class="list-project">CSS</li>
+                        <li class="list-project">JavaScript</li>
+                    </ul>
+                </div>
+                <div class="container-tools">
+                    <h2 class="sub-title">Outils</h2>
+                    <ul>
+                        <li class="list-project">Figma</li>
+                        <li class="list-project">Trello</li>
+                        <li class="list-project">Notion</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="overview-project">
+            <div class="container-preview-project">
+                <h2 class="sub-title-preview">Aperçu du projet</h2>
+            </div>
+            <p class="paragraph-description-project">L’idée d’avoir la posibilité et la chance de pouvoir montrer à un plus grand nombre de personnes, <span class="style-bold">une de mes nouvelles passions récentes, la photographie</span> et de créer par l’occasion un portfolio et blog était une bonne ocassion à saisir.
+                
+                J’ai du acquérir de multiples compétences pour mener à bien la réalisation de ce projet. Mettre en place mon propre cachier des charges, pour mieux me retrouver et bien cadriller mon projet. 
+                
+                Puis j’ai du me former sur des langages où je débutais tout juste, tout en continuant le suivi constant du projet.
+            </p>
+        </section>
 
-        
-    </head>
-    <body>
-        
-    </body>
+        <section class="link-project">
+            <p class="text-link-project">Le site est encore en chantier mais voilà son lien github</p>
+            <img class="icon-arrow" src="./assets/icons/arrow-down-light.svg" alt="">
+            <a href=""><img class="icon-rs" src="./assets/icons/github.svg" alt=""></a>
+        </section>
+
+    </main>
+    <footer>
+        <a href="#top">
+            <div class="tree">
+                <div class="branch"></div>
+                <div class="branch"></div>
+                <div class="branch"></div>
+                <div class="branch"></div>
+                <div class="trunk"></div>
+            </div>
+        </a>
+        <div class="container-icon-rs">
+            <img class="icon-rs" src="./assets/icons/linkedin.svg" alt="">
+            <img class="icon-rs" src="./assets/icons/github.svg" alt="">
+            <img class="icon-rs" src="./assets/icons/message.svg" alt="">
+        </div>
+        <div class="container-copyright">
+            <img class="icon-copyright" src="./assets/icons/copyright.svg" alt="">
+            <p class="copyright">Lucas Mota 2024</p>
+        </div>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
 </html>

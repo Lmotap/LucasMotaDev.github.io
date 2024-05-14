@@ -122,3 +122,83 @@ nav li {
     text-align: center;
 }  
 
+
+/* Sparkle HTML */
+
+/* Fiche Project */
+
+.icon-project {
+    margin-top: 5rem;
+}
+
+.sparkle-project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.paragraph-project-overview {
+    text-align: center;
+}
+
+/* Spécificité du projet */
+
+.container-specificity {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: -1rem;
+}
+
+.container-skills, .container-langages, .container-tools {
+    flex: 1;
+}
+
+.container-skills ul, .container-langages ul, .container-tools ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+
+/* Description du projet */
+
+.overview-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.container-preview-project {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 18rem;
+    padding-left: 1rem;
+}
+
+.paragraph-description-project  {
+    white-space: pre-line;
+    text-align: justify;
+    padding-left: 5rem;
+    padding-right: 1rem;
+}
+
+/* Link du projet */ 
+
+.link-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    gap: 1rem;
+}
+
+.text-link-project {
+    text-align: center;
+}

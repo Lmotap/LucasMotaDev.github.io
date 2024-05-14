@@ -211,3 +211,74 @@ h3 {
     position: absolute;
     bottom: 0;
 }
+
+
+/* Sparkle HTML */
+
+/* Fiche Project */
+
+.icon-project {
+    width: 4rem;
+}
+
+.title-project {
+    font-family: var(--fnt-abril);
+    font-size: 3em;
+    color: var(--color-blue);
+}
+
+.paragraph-project-overview {
+    font-family: var(--fnt-anonymous);
+    font-size: 1em;
+    color: var(--color-blue);
+}
+
+.separator {
+    width: 90%;
+    height: 1px;
+    background-color: var(--color-green);
+}
+
+.container-specificity ul li {
+    list-style: none;
+}
+
+.sub-title, .sub-title-preview {
+    font-family: var(--fnt-abril);
+    font-size: 1.5em;
+    color: var(--color-blue);
+}
+
+.list-project {
+    font-family: var(--fnt-anonymous);
+    font-size: 1em;
+    color: var(--color-green);
+}
+
+/* Spécificité du projet */
+
+.paragraph-description-project {
+    font-family: var(--fnt-anonymous);
+    font-size: 0.8em;
+    color: var(--color-green);
+}
+
+.sub-title-preview {
+    font-size: 1.1em;
+}
+
+.style-bold {
+    font-weight: bold;
+}
+
+/* Link du projet */
+
+.text-link-project {
+    font-family: var(--fnt-abril);
+    font-size: 1em;
+    color: var(--color-blue);
+}
+
+.icon-arrow {
+    width: 1.5rem;
+}
