@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sparkle - Portfolio et Blog de photographie</title>
+        <title>Lucas Mota - Développeur Web & Web mobile</title>
+        <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
 
         <link rel="stylesheet" href="./assets/styles/reset.css">
         <link rel="stylesheet" href="./assets/styles/layout.css">
@@ -15,29 +16,107 @@
     <body>
         
         <!-- Début du header -->
-        <header>
-            <a href="./index.html"><div class="logo">LM</div></a>
-            <nav>
-                <ul>
-                    <li id="show_hamburger">
-                        <span id="nav-show" data-target=".collapse"><img id="icon_hamburger" src="./assets/icons/hamburger.svg" alt="Icône de burger"></span>
-                    </li>
+    <header>
+        <a href="./index.html"><div class="logo">LM</div></a>
+        <nav>
+            <ul>
+                <li id="show_hamburger">
+                    <span id="nav-show" data-target=".collapse"><img class="icon-hamburger" id="icon_hamburger" src="./assets/icons/hamburger.svg" alt="Icône de burger"></span>
+                </li>
+                <div class="container_nav">
                     <li id="close_hamburger">
-                    <span id="nav-hide" data-target=".collapse" class="hide"><img id="icon_cross_ham" src="./assets/icons/cross.svg" alt="Icône de fermeture"></span>
+                    <span id="nav-hide" data-target=".collapse" class="hide"><img class="icon-hamburger" id="icon_cross_ham" src="./assets/icons/cross.svg" alt="Icône de fermeture"></span>
                     </li>
-
                     <div class="collapse hide">
                         
-                    <div class="nav">
-                        <li class="link_nav"><a href="./index.html">Projets</a></li>
-                        <li class="link_nav"><a href="#">CV</a></li>
-                    </div>
+                        <div class="nav">
+                            <li class="link_nav underline"><a href="#projects">Projets</a></li>
+                            <li class="link_nav"><a href="">CV</a></li>
 
-                    </div>
-                </ul>
-            </nav>
-        </header>
+                        <div class="container-icon">
+                            <a href="#"><img class="icon-rs" src="./assets/icons/linkedin.svg" alt=""></a>
+                            <a href="#"><img class="icon-rs" src="./assets/icons/github.svg" alt=""></a>
+                            <a href="#"><img class="icon-rs" src="./assets/icons/message.svg" alt=""></a>
+                        </div>
 
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+
+            <div class="container-intro">
+                <h1>Enchanté,<br>mon prénom est Lucas <span class="point">.</span></h1>
+            </div>
+
+            <div class="container-job">
+                <p class="paragraph">Développeur web et web mobile junior.</p>
+            </div>
+
+            <div class="container-localisation">
+                <p class="paragraph">Situé à Paris</p>
+                <img class="icon-paris" src="./assets/icons/eiffel-tower.svg" alt="">
+            </div>
+        </section>
+
+        <section class="about-me">
+            <h2 class="title">A propos de moi</h2>
+
+            <p class="paragraph-about-me">Lucas est un développeur junior passionné, compétent en front-end, back-end, maquettage et design. Il est animé par la créativité, les hommes chapeaux, et le désir d’apprendre. </p>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2 class="title">Mes projets</h2>
+
+            <div class="container-project">
+                <a href="./sparkle.html"><img class="img-projects" src="./assets/img/portfoliophoto.jpg" alt=""></a>
+                <div class="wrapper-title-project-date">
+                    <h3>Sparkle <span class="date">- 2024</span></h3>
+                </div>
+                <p class="paragraph-project">Conception de mon blog et site vitrine autour de mes photographies.</p>
+            </div>
+
+            <div class="container-project">
+                <img class="img-projects" src="./assets/img/portfoliophoto.jpg" alt="">
+                <div class="wrapper-title-project-date">
+                    <h3>Sparkle <span class="date">- 2024</span></h3>
+                </div>
+                <p class="paragraph-project">Conception de mon blog et site vitrine autour de mes photographies.</p>
+            </div>
+
+        </section>
+
+        <footer>
+            <a href="#top">
+                <div class="tree">
+                    <div class="branch"></div>
+                    <div class="branch"></div>
+                    <div class="branch"></div>
+                    <div class="branch"></div>
+                    <div class="trunk"></div>
+                </div>
+            </a>
+
+            <div class="container-icon-rs">
+                <img class="icon-rs" src="./assets/icons/linkedin.svg" alt="">
+                <img class="icon-rs" src="./assets/icons/github.svg" alt="">
+                <img class="icon-rs" src="./assets/icons/message.svg" alt="">
+            </div>
+
+            <div class="container-copyright">
+                <img class="icon-copyright" src="./assets/icons/copyright.svg" alt="">
+                <p class="copyright">Lucas Mota 2024</p>
+            </div>
+
+        </footer>
+
+    </main>
+
+        <script src="./js/app.js"></script>
     </body>
 
 </html>

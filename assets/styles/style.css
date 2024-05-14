@@ -25,7 +25,7 @@
     src: url('../fonts/AnonymousPro/AnonymousPro-BoldItalic.ttf') format('truetype')
 }
 
-.root {
+:root {
 
     /* Couleurs variables */
 
@@ -37,4 +37,177 @@
 
     --fnt-abril: "Abril Fatface";
     --fnt-anonymous: "Anonymous Pro";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ /* Header */
+
+.logo {
+    font-family: var(--fnt-abril);
+    font-size: 2.5em;
+    color: var(--color-blue);
+    display: inline-block;
+}
+
+.icon-hamburger {
+    width: 2.5rem;
+}
+
+.icon-rs {
+    width: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-blue);
+}
+
+.link_nav {
+    font-family: var(--fnt-abril);
+    font-size: 2em;
+    color: var(--color-blue);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+/* Section Introduction */ 
+
+.container-intro h1 {
+    font-family: var(--fnt-abril);
+    font-size: 2em;
+    color: var(--color-blue);
+}
+
+.point {
+    color: var(--color-green);
+}
+
+.paragraph, .paragraph-about-me, .paragraph-project {
+    font-family: var(--fnt-anonymous);
+    font-size: 1em;
+    color: var(--color-green);
+}
+
+.icon-paris {
+    width: 2rem;
+    align-self: center;
+}
+
+/* Section About me */
+
+.title {
+    font-family: var(--fnt-abril);
+    font-size: 2em;
+    color: var(--color-blue);
+}
+
+/* Section Projects */
+
+.img-projects {
+    width: 20rem;
+    height: 15rem;
+    border-radius: 45px;
+    object-fit: cover;
+    transition: transform .4s;
+}
+
+.img-projects:hover {
+    transform: scale(1.1); 
+    cursor: pointer; 
+}
+
+h3 {
+    font-family: var(--fnt-abril);
+    font-size: 1.5em;
+    color: var(--color-blue);
+}
+
+.date {
+    font-family: var(--fnt-abril);
+    font-size: 1em;
+    color: var(--color-green);
+}
+
+.paragraph-project {
+    padding: 0 10%;
+    margin: 5% 0;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+/* Footer */
+
+.copyright {
+    font-family: var(--fnt-anonymous);
+    font-size: 1em;
+    color: var(--color-blue);
+}
+
+.icon-copyright {
+    width: 1rem;
+}
+
+.tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 5rem;
+}
+
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(10deg); }
+    30% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    70% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.branch {
+    width: 25px;
+    height: 20px;
+    background-color: var(--color-green);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    position: absolute;
+    bottom: 50px;
+}
+
+.tree:hover .branch {
+    animation: swing 2s infinite ease-in-out;
+}
+
+.branch:nth-child(2) {
+    width: 30px;
+    height: 20px;
+    bottom: 40px;
+}
+
+.branch:nth-child(3) {
+    width: 35px;
+    height: 20px;
+    bottom: 30px;
+}
+
+.branch:nth-child(4) {
+    width: 40px;
+    height: 20px;
+    bottom: 20px;
+}
+
+.trunk {
+    width: 3px;
+    height: 20px;
+    background-color: var(--color-blue);
+    position: absolute;
+    bottom: 0;
 }

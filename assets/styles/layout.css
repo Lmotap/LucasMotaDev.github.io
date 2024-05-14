@@ -1,0 +1,124 @@
+ /* Header */
+
+header {
+    position: relative;
+    padding: 0 1rem;
+}
+
+.hide {
+    display: none;
+}
+
+.container_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-icon {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    text-align: center;
+}
+
+.link_nav {
+    padding-bottom: 2rem;
+}
+
+nav li {
+    padding: 0 1rem;
+    text-align: center;
+}
+
+#show_hamburger, #close_hamburger {
+    position: absolute;
+    right: 0;
+    top: 0.8rem;
+}
+
+/* Section Introduction */ 
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.paragraph, .paragraph-about-me {
+    margin: 1rem;
+    text-align: center;
+}
+
+.container-localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Section About me */
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+
+/* Section Projects */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+.container-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-title-project-date {
+    width: 80%;
+    margin: 1rem 0;
+}
+
+/* Footer */
+
+.container-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.container-icon-rs {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.copyright {
+    text-align: center;
+}  
+
