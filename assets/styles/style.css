@@ -173,9 +173,9 @@ a {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 4px; /* Augmentation de la taille */
-    height: 4px; /* Augmentation de la taille */
-    background: var(--color-green); /* Changement de la couleur */
+    width: 4px;
+    height: 4px; 
+    background: var(--color-green);
     border-radius: 50%;
     animation: firework 1s ease-out forwards;
 }
@@ -190,13 +190,13 @@ a {
 
 @keyframes firework {
     0% {
-        width: 4px; /* Augmentation de la taille */
-        height: 4px; /* Augmentation de la taille */
+        width: 4px; 
+        height: 4px; 
         opacity: 1;
     }
     100% {
-        width: 100px; /* Augmentation de la taille */
-        height: 100px; /* Augmentation de la taille */
+        width: 100px; 
+        height: 100px; 
         opacity: 0;
     }
 }

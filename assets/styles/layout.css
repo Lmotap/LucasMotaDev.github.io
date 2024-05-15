@@ -1,7 +1,6 @@
- /* Header */
+/* Header */
 
-header {
-    position: relative;
+header, nav li {
     padding: 0 1rem;
 }
 
@@ -9,7 +8,7 @@ header {
     display: none;
 }
 
-.container_nav {
+.container_nav, .intro, .about-me, .projects, .sparkle-project {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,17 +20,12 @@ nav ul {
     padding: 0;
 }
 
-nav a {
+nav a, nav li {
     text-align: center;
 }
 
 .link_nav {
     padding-bottom: 2rem;
-}
-
-nav li {
-    padding: 0 1rem;
-    text-align: center;
 }
 
 #show_hamburger, #close_hamburger {
@@ -40,28 +34,21 @@ nav li {
     top: 0.8rem;
 }
 
-
 /* Section Introduction */ 
 
-.intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.intro, footer {
     margin-top: 15rem;
-    gap: 3rem;
 }
 
-.paragraph, .paragraph-about-me {
+.paragraph, .paragraph-about-me, .paragraph-project, .paragraph-project-overview {
     margin: 1rem;
     text-align: center;
 }
 
-.container-localisation {
+.container-localisation, .container-copyright, .container-icon-rs {
     display: flex;
     justify-content: center;
-    align-items: baseline;
-    gap: 1rem;
+    align-items: center;
 }
 
 .paragraph-localisation {
@@ -70,35 +57,26 @@ nav li {
 
 /* Section About me */
 
-.about-me {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.about-me, .projects {
     margin-top: 25rem;
     gap: 3rem;
 }
 
-.paragraph-about-me {
+.paragraph-about-me, .paragraph-project {
     padding: 0 15%;
     margin: 5% 0;
 }
 
-
 /* Section Projects */
 
 .projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 36rem;
-    gap: 3rem;
 }
 
 .title-date-project {
     display: block;
 }
+
 .wrapper-title-project-image {
     display: flex;
     flex-direction: column;
@@ -112,28 +90,13 @@ h3 {
     padding-left: 1rem;
 }
 
-.paragraph-project {
-    padding: 0 15%;
-    margin: 5% 0;
-}
-
-
 /* Footer */
 
-footer {
-    margin-top: 15rem;
-}
-
 .container-copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 0.5rem;
 }
 
 .container-icon-rs {
-    display: flex;
-    justify-content: center;
     gap: 2rem;
     margin: 1rem 0;
 }
@@ -141,7 +104,6 @@ footer {
 .copyright {
     text-align: center;
 }  
-
 
 /* Sparkle HTML */
 
@@ -151,17 +113,29 @@ footer {
     margin-top: 5rem;
 }
 
-.sparkle-project{
+.paragraph-project-overview {
+    padding: 0 10%;
+}
+
+/* Sparkle HTML */
+
+/* Fiche Project */
+
+.icon-project {
+    margin-top: 5rem;
+}
+
+.paragraph-project-overview {
+    padding: 0 10%;
+    text-align: center;
+}
+
+.sparkle-project, .link-project {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-}
-
-.paragraph-project-overview {
-    text-align: center;
-    padding: 0 10%;
 }
 
 /* Spécificité du projet */
@@ -173,11 +147,7 @@ footer {
     margin-top: -1rem;
 }
 
-.container-skills, .container-langages, .container-tools {
-    flex: 1;
-}
-
-.container-skills ul, .container-langages ul, .container-tools ul {
+.container-skills ul, .container-langages ul, .container-tools ul, .overview-project {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -187,9 +157,6 @@ footer {
 /* Description du projet */
 
 .overview-project {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     margin-top: 8rem;
     gap: 2rem;
     padding: 3%;
@@ -202,10 +169,6 @@ footer {
 /* Link du projet */ 
 
 .link-project {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 7rem;
     gap: 1rem;
 }
@@ -213,6 +176,7 @@ footer {
 .text-link-project {
     text-align: center;
 }
+
 
 /* Media Queries */
 

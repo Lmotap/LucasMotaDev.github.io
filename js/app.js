@@ -1,7 +1,6 @@
 /******************
 * Menu hamburger *
 *****************/
-// Récupération des "boutons" responsives
 
 const btnNavShow = document.querySelector("#nav-show");
 const btnNavHide = document.querySelector("#nav-hide");
@@ -13,31 +12,31 @@ btnNavHide.addEventListener("click", cacherNavigation);
 
 function afficherNavigation() {
 
-    // Element à manipuler
+    
     const navMenu = document.querySelector(btnNavShow.dataset.target);
 
-    // Retirer la classe .hide de la liste des classes de l'élément
+    
     navMenu.classList.remove("hide");
 
-    // Cacher l'icône hamburger
+    
     btnNavShow.classList.add("hide");
 
-    // Et afficher l'icône "croix de fermeture"
+    
     btnNavHide.classList.remove("hide");
 }
 
 function cacherNavigation() {
 
-    // Element à manipuler
+    
     const navMenu = document.querySelector(btnNavHide.dataset.target);
 
-    // Ajouter la classe .hide à la liste des classes de l'élément
+    
     navMenu.classList.add("hide");
 
-    // Afficher l'icône hamburger
+    
     btnNavShow.classList.remove("hide")
 
-    // Et cacher l'icône "croix de fermeture"
+    
     btnNavHide.classList.add("hide");
 
 }
@@ -64,16 +63,16 @@ function manageCollapsableMenuItem(event) {
     }
 }
 
-// Récupération des éléments
+
 const navMenu = document.querySelector('.collapse');
 const containerIcon = document.querySelector('.container-icon');
 
-// Ajout d'un écouteur d'événement pour le redimensionnement de la fenêtre
+
 window.addEventListener('resize', manageIconContainer);
 
-// Fonction pour gérer le placement du container-icon
+
 function manageIconContainer() {
-    if (window.innerWidth <= 833) { // Taille d'écran pour le responsive
+    if (window.innerWidth <= 833) { 
         if (!navMenu.contains(containerIcon)) {
             navMenu.appendChild(containerIcon);
         }
@@ -86,5 +85,4 @@ function manageIconContainer() {
     }
 }
 
-// Appel initial de la fonction pour gérer le placement initial du container-icon
 manageIconContainer();
