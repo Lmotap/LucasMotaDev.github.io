@@ -58,7 +58,7 @@ nav a, nav li {
 /* Section About me */
 
 .about-me, .projects {
-    margin-top: 25rem;
+    margin-top: 15rem;
     gap: 3rem;
 }
 
@@ -70,7 +70,7 @@ nav a, nav li {
 /* Section Projects */
 
 .projects {
-    margin-top: 36rem;
+    margin-top: 10rem;
 }
 
 .title-date-project {
@@ -234,7 +234,7 @@ h3 {
 /* Fiche Project */
 
 .projects {
-    margin-top: 40rem;
+    margin-top: 10rem;
 
 }
 .icon-project {
