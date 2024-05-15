@@ -222,7 +222,26 @@ footer {
 
 /* Media Queries */
 
-@media screen and (min-width: 834px) {
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    .title-intro {
+        padding-left: 3rem;
+    }
+
+    .container-specificity {
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .container-skills ul, .container-langages ul, .container-tools ul {
+        align-items: center;
+    }
+
+.text-link-project {
+    padding: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 820px) {
 
     /* Header */
 
@@ -246,6 +265,7 @@ footer {
 
     .container-icon {
         align-items: center;
+        margin-left: 5rem;
     }
 
     .link_nav {
@@ -306,7 +326,6 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-
         gap: 5rem;
     }
 
@@ -321,7 +340,7 @@ footer {
 
     .link_nav {
         padding: 0;
-    }
+}
 
     .collapse {
         display: flex;
