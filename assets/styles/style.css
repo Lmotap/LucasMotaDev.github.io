@@ -49,6 +49,11 @@ html {
     font-family: var(--fnt-abril);
     font-size: 2.5em;
     color: var(--color-blue);
+    transition: color 1s ease-in-out;
+}
+
+.logo:hover {
+    color: var(--color-green);
 }
 
 .icon-hamburger {
@@ -115,6 +120,51 @@ a {
 .icon-paris {
     position: relative;
     width: 2rem;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+    transform: translateX(-100%);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+    transform: translateX(100%);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+    transform: translateY(100%);
+    opacity: 0;
+    }
+    100% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.container-intro {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.container-job {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+.container-localisation {
+    animation: 1s ease-out 0s 1 slideInFromBottom;
 }
 
 .icon-paris:hover::before,
