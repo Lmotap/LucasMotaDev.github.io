@@ -16,12 +16,6 @@ header {
     align-items: center;
 }
 
-.container-icon {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -263,11 +257,6 @@ footer {
         gap: 5rem;
     }
 
-    .container-icon {
-        align-items: center;
-        margin-left: 5rem;
-    }
-
     .link_nav {
         padding: 0;
     }
@@ -327,10 +316,6 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 5rem;
-    }
-
-    .container-icon {
-        align-items: center;
     }
 
     .logo {

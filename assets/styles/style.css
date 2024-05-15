@@ -55,22 +55,7 @@ html {
     width: 2.5rem;
 }
 
-.icon-rs {
-    width: 2rem;
-    transition: transform .3s ease-in-out;
-}
 
-.icon-rs:hover {
-    animation: shake .5s infinite;
-}
-
-@keyframes shake {
-    0% { transform: translateX(0px) rotate(0deg); }
-    25% { transform: translateX(-5px) rotate(-5deg); }
-    50% { transform: translateX(0px) rotate(0deg); }
-    75% { transform: translateX(5px) rotate(5deg); }
-    100% { transform: translateX(0px) rotate(0deg); }
-}
 
 a {
     text-decoration: none;
@@ -208,6 +193,23 @@ h3 {
 }
 
 /* Footer */
+
+.icon-rs {
+    width: 2rem;
+    transition: transform .3s ease-in-out;
+}
+
+.icon-rs:hover {
+    animation: shake .5s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0px) rotate(0deg); }
+    25% { transform: translateX(-5px) rotate(-5deg); }
+    50% { transform: translateX(0px) rotate(0deg); }
+    75% { transform: translateX(5px) rotate(5deg); }
+    100% { transform: translateX(0px) rotate(0deg); }
+}
 
 .copyright {
     font-family: var(--fnt-anonymous);
@@ -371,7 +373,8 @@ h3 {
 
 /* Media Queries */
 
-@media screen and (min-width: 321px) and (max-width: 375px) {
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    
     .img-projects {
         width: 17rem;
         height: 12rem;
