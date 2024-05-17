@@ -86,3 +86,4 @@ function manageIconContainer() {
 }
 
 manageIconContainer();
+
