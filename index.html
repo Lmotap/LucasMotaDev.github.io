@@ -12,6 +12,13 @@
     <!-- Meta Description (SEO) -->
     <meta name="description" content="Salut &#x1F44F;! Voilà mon portfolio de développeur ! ">
 
+    <!-- Link Font -->
+    <link rel="preload" href="./assets/fonts/AbrilFatFace/AbrilFatface-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./assets/fonts/AnonymousPro/AnonymousPro-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./assets/fonts/AnonymousPro/AnonymousPro-BoldItalic.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./assets/fonts/AnonymousPro/AnonymousPro-Italic.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./assets/fonts/AnonymousPro/AnonymousPro-Regular.ttf" as="font" type="font/ttf" crossorigin>
+
     <!-- Link Stylesheet -->
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/layout.css">
@@ -29,24 +36,24 @@
                 <ul>
                     <li id="show_hamburger">
                         <span id="nav-show" data-target=".collapse">
-                            <img class="icon-hamburger" id="icon_hamburger" src="./assets/icons/hamburger.svg" alt="Icône de burger">
+                            <img class="icon-hamburger" id="icon_hamburger" src="./assets/icons/hamburger.svg" alt="Icône d'hamburger qui permet d'afficher la barre de navigation">
                         </span>
                     </li>
                     <li id="close_hamburger">
                         <span id="nav-hide" data-target=".collapse" class="hide">
-                            <img class="icon-hamburger" id="icon_cross_ham" src="./assets/icons/cross.svg" alt="Icône de fermeture">
+                            <img class="icon-hamburger" id="icon_cross_ham" src="./assets/icons/cross.svg" alt="Icône de fermeture qui permet de cacher la barre navigation">
                         </span>
                     </li>
-                    <div class="collapse hide">
+                    <div class="collapse hide" role="menu">
                         <div class="container-nav">
-                            <li class="link_nav">
+                            <li class="link_nav" role="menuitem">
                                 <a class="custom-link" href="#about-me">A propos</a>
                             </li>
-                            <li class="link_nav">
+                            <li class="link_nav" role="menuitem">
                                 <a class="custom-link" href="#projects">Projets</a>
                             </li>
-                            <li class="link_nav">
-                                <a class="custom-link" href="./doc/CV_ORIGINAL.pdf" download>CV</a>
+                            <li class="link_nav" role="menuitem">
+                                <a class="custom-link" href="./doc/CV_ORIGINAL.pdf" download aria-label="Télécharger mon CV">CV</a>
                             </li>
                         </div>
                     </div>
@@ -71,8 +78,7 @@
             <div class="container-localisation">
                 <p class="paragraph-localisation">Situé à Paris</p>
                 <div class="icon-paris">
-                    <img src="./assets/icons/eiffel-tower.svg" alt="Icône de Tour Eiffel">
-                </div>
+                    <img src="./assets/icons/eiffel-tower.svg" alt="Icône de la Tour Eiffel à Paris">                </div>
             </div>
         </section>
 
@@ -86,8 +92,8 @@
             <h2 class="title">Mes projets</h2>
 
             <div class="wrapper-title-project-image">
-                <a href="./sparkle.html">
-                    <img class="img-projects" src="./assets/img/mockup-projet.webp" alt="Image représentant le logo de mon projet sur du papier">
+                <a href="./sparkle.html" aria-label="Visitez ma page de mon projet Sparkle">
+                    <img class="img-projects" src="./assets/img/mockup-projet.webp" alt="Image de mon logo qui redirige à la page Sparkle">
                 </a>
                 <h3 class="title-date-project">Sparkle <span class="date">- 2024</span></h3>
                 <p class="paragraph-project">Conception de mon blog et site vitrine autour de mes photographies.</p>
@@ -97,7 +103,7 @@
 
     <!-- Début du Footer -->
     <footer>
-        <a href="#top">
+        <a href="#top" aria-label="Retour en haut de la page">
             <div class="tree">
                 <div class="branch"></div>
                 <div class="branch"></div>
@@ -108,14 +114,14 @@
         </a>
 
         <div class="container-icon-rs">
-            <a href="https://www.linkedin.com/in/lucas-mota-développeur-web">
-                <img class="icon-rs" src="./assets/icons/linkedin.svg" alt="Icône de Linkedin">
+            <a href="https://www.linkedin.com/in/lucas-mota-développeur-web" aria-label="Visitez mon profil LinkedIn">
+                <img class="icon-rs" src="./assets/icons/linkedin.svg" alt="Profil LinkedIn de Lucas Mota">
             </a>
-            <a href="https://github.com/Lmotap">
-                <img class="icon-rs" src="./assets/icons/github.svg" alt="Icône de GitHub">
+            <a href="https://github.com/Lmotap" aria-label="Visitez mon profil Github">
+                <img class="icon-rs" src="./assets/icons/github.svg" alt="Profil GitHub de Lucas Mota">
             </a>
-            <a href="mailto:mota.lucas@proton.me">
-                <img class="icon-rs" src="./assets/icons/message.svg" alt="Icône de messagerie">
+            <a href="mailto:mota.lucas@proton.me" aria-label="Envoyez-moi un email">
+                <img class="icon-rs" src="./assets/icons/message.svg" alt="Envoyer un e-mail à Lucas Mota">
             </a>
         </div>
 

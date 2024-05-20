@@ -1,17 +1,20 @@
 @font-face {
     font-family: 'Abril Fatface';
     font-weight: 400;
-    src: url('../fonts/AbrilFatFace/AbrilFatface-Regular.ttf') format('truetype')
+    src: url('../fonts/AbrilFatFace/AbrilFatface-Regular.ttf') format('truetype');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Anonymous Pro';
     font-weight: 400;
-    src: url('../fonts/AnonymousPro/AnonymousPro-Regular.ttf') format('truetype')
+    src: url('../fonts/AnonymousPro/AnonymousPro-Regular.ttf') format('truetype');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Anonymous Pro';
     font-style: italic;
-    src: url('../fonts/AnonymousPro/AnonymousPro-Italic.ttf') format('truetype')
+    src: url('../fonts/AnonymousPro/AnonymousPro-Italic.ttf') format('truetype');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Anonymous Pro';
@@ -215,7 +218,6 @@ a {
 
 .img-projects {
     width: 20rem;
-    height: 15rem;
     border-radius: 45px;
     object-fit: cover;
     transition: transform .4s;

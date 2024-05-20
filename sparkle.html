@@ -12,6 +12,13 @@
     <!-- Meta Description (SEO) -->
     <meta name="description" content="Description et détails de mon projet Sparkle, blog et site vitrine de mes photographies">
 
+        <!-- Link Font -->
+        <link rel="preload" href="./assets/fonts/AbrilFatFace/AbrilFatface-Regular.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="preload" href="./assets/fonts/AnonymousPro/AnonymousPro-Bold.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="preload" href="./assets/fonts/AnonymousPro/AnonymousPro-BoldItalic.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="preload" href="./assets/fonts/AnonymousPro/AnonymousPro-Italic.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="preload" href="./assets/fonts/AnonymousPro/AnonymousPro-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    
     <!-- Link Stylesheet -->
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/layout.css">
@@ -25,35 +32,31 @@
         <a href="./index.html">
             <div class="logo">LM</div>
         </a>
-        <nav>
-            <ul>
-                <li id="show_hamburger">
-                    <span id="nav-show" data-target=".collapse">
-                        <img class="icon-hamburger" id="icon_hamburger" src="./assets/icons/hamburger.svg" alt="Icône de burger">
-                    </span>
-                </li>
-                <div class="container_nav">
-                    <li id="close_hamburger">
-                        <span id="nav-hide" data-target=".collapse" class="hide">
-                            <img class="icon-hamburger" id="icon_cross_ham" src="./assets/icons/cross.svg" alt="Icône de fermeture">
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li id="show_hamburger">
+                        <span id="nav-show" data-target=".collapse">
+                            <img class="icon-hamburger" id="icon_hamburger" src="./assets/icons/hamburger.svg" alt="Icône d'hamburger qui permet d'afficher la barre de navigation">
                         </span>
                     </li>
-                    <div class="collapse hide">
+                    <li id="close_hamburger">
+                        <span id="nav-hide" data-target=".collapse" class="hide">
+                            <img class="icon-hamburger" id="icon_cross_ham" src="./assets/icons/cross.svg" alt="Icône de fermeture qui permet de cacher la barre navigation">
+                        </span>
+                    </li>
+                    <div class="collapse hide" role="menu">
                         <div class="container-nav">
-                            <li class="link_nav">
-                                <a class="custom-link" href="#projects">
-                                    <img src="" alt="">
-                                </a>
-                            </li>
-                            <li class="link_nav">
-                                <a class="custom-link" href="">CV</a>
+                            <li class="link_nav" role="menuitem">
+                                <a class="custom-link" href="./doc/CV_ORIGINAL.pdf" download aria-label="Télécharger mon CV">CV</a>
                             </li>
                         </div>
                     </div>
-                </div>
-            </ul>
-        </nav>
+                </ul>
+            </nav>
+        </div>
     </header>
+    <!-- Fin du header -->
 
     <main>
         <section class="sparkle-project">
@@ -111,7 +114,7 @@
         <section class="link-project">
             <p class="text-link-project">Le site est encore en chantier mais voilà son lien github</p>
             <img class="icon-arrow" src="./assets/icons/arrow-down-light.svg" alt="Icône d'une flèche qui pointe vers le bas">
-            <a href="https://github.com/Lmotap/Sparkle">
+            <a href="https://github.com/Lmotap/Sparkle" aria-label="Visitez mon projet Sparkle sur Github">
                 <img class="icon-rs" src="./assets/icons/github.svg" alt="Icône de Github">
             </a>
         </section>
@@ -129,13 +132,13 @@
             </div>
         </a>
         <div class="container-icon-rs">
-            <a href="https://www.linkedin.com/in/lucas-mota-développeur-web">
+            <a href="https://www.linkedin.com/in/lucas-mota-développeur-web" aria-label="Visitez mon profil LinkedIn">
                 <img class="icon-rs" src="./assets/icons/linkedin.svg" alt="Icône de Linkedin">
             </a>
-            <a href="https://github.com/Lmotap">
+            <a href="https://github.com/Lmotap" aria-label="Visitez mon profil Github">
                 <img class="icon-rs" src="./assets/icons/github.svg" alt="Icône de GitHub">
             </a>
-            <a href="mailto:mota.lucas@proton.me">
+            <a href="mailto:mota.lucas@proton.me" aria-label="Envoyez-moi un email">
                 <img class="icon-rs" src="./assets/icons/message.svg" alt="Icône de messagerie">
             </a>
         </div>
